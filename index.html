@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homeory: Discover your perfect home in Noida. Curated for discerning professionals. 1-week guarantee.">
+    <meta name="description"
+        content="Homeory: Discover your perfect home in Noida. Curated for discerning professionals. 1-week guarantee.">
     <title>Homeory | The Right Home. Within Your Budget.</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -28,7 +32,9 @@
             --white: #ffffff;
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -98,8 +104,13 @@
             transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        nav a:hover { color: var(--accent-rose); }
-        nav a:hover::before { width: 100%; }
+        nav a:hover {
+            color: var(--accent-rose);
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
 
         .cta {
             background: linear-gradient(135deg, var(--accent-rose) 0%, var(--accent-slate) 100%);
@@ -125,12 +136,18 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
             transition: left 0.5s;
         }
 
-        .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(196, 124, 90, 0.25); }
-        .cta:hover::before { left: 100%; }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(196, 124, 90, 0.25);
+        }
+
+        .cta:hover::before {
+            left: 100%;
+        }
 
         /* ── HERO ── */
         .hero {
@@ -144,11 +161,20 @@
             min-height: calc(100vh - 100px);
         }
 
-        .hero-left { animation: fadeInUp 1s ease-out; }
+        .hero-left {
+            animation: fadeInUp 1s ease-out;
+        }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to   { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero-badge {
@@ -216,16 +242,25 @@
         .btn-primary::before {
             content: '';
             position: absolute;
-            top: 50%; left: 50%;
-            width: 0; height: 0;
-            background: rgba(255,255,255,0.2);
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
         }
 
-        .btn-primary:hover::before { width: 300px; height: 300px; }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 40px rgba(196, 124, 90, 0.28); }
+        .btn-primary:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(196, 124, 90, 0.28);
+        }
 
         .btn-secondary {
             background: transparent;
@@ -256,7 +291,11 @@
             border-top: 1px solid #ddd4c8;
         }
 
-        .stat { display: flex; flex-direction: column; gap: 0.5rem; }
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
 
         .stat-number {
             font-family: 'Playfair Display', serif;
@@ -285,46 +324,53 @@
 
         .hero-photo-main {
             position: absolute;
-            top: 0; left: 0;
+            top: 0;
+            left: 0;
             width: 75%;
             height: 85%;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
         }
 
         .hero-photo-main img {
-            width: 100%; height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             transition: transform 8s ease;
         }
 
-        .hero-photo-main:hover img { transform: scale(1.04); }
+        .hero-photo-main:hover img {
+            transform: scale(1.04);
+        }
 
         .hero-photo-secondary {
             position: absolute;
-            bottom: 0; right: 0;
+            bottom: 0;
+            right: 0;
             width: 52%;
             height: 52%;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
             border: 4px solid var(--secondary);
         }
 
         .hero-photo-secondary img {
-            width: 100%; height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
         .hero-photo-badge {
             position: absolute;
-            top: 50%; left: 60%;
+            top: 50%;
+            left: 60%;
             transform: translate(-50%, -50%);
             background: var(--white);
             border-radius: 12px;
             padding: 1.2rem 1.6rem;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
             text-align: center;
             z-index: 10;
             min-width: 140px;
@@ -384,7 +430,8 @@
         }
 
         .photo-cell img {
-            width: 100%; height: 100%;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             transition: transform 0.6s ease;
             filter: brightness(0.88);
@@ -404,7 +451,7 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 600;
-            background: rgba(0,0,0,0.35);
+            background: rgba(0, 0, 0, 0.35);
             padding: 0.3rem 0.7rem;
             border-radius: 3px;
             backdrop-filter: blur(4px);
@@ -465,17 +512,36 @@
             animation: fadeInUp 1s ease-out backwards;
         }
 
-        .pain-card:nth-child(1) { animation-delay: 0.1s; }
-        .pain-card:nth-child(2) { animation-delay: 0.2s; }
-        .pain-card:nth-child(3) { animation-delay: 0.3s; }
-        .pain-card:nth-child(4) { animation-delay: 0.4s; }
-        .pain-card:nth-child(5) { animation-delay: 0.5s; }
-        .pain-card:nth-child(6) { animation-delay: 0.6s; }
+        .pain-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .pain-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .pain-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .pain-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .pain-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .pain-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
         .pain-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 3px;
             background: linear-gradient(90deg, var(--accent-rose), var(--accent-slate));
             transform: scaleX(0);
@@ -483,10 +549,20 @@
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .pain-card:hover { transform: translateY(-8px); box-shadow: 0 20px 45px rgba(0,0,0,0.09); border-color: var(--accent-rose); }
-        .pain-card:hover::before { transform: scaleX(1); }
+        .pain-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.09);
+            border-color: var(--accent-rose);
+        }
 
-        .pain-icon { font-size: 2.2rem; margin-bottom: 1.5rem; }
+        .pain-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pain-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
 
         .pain-title {
             font-family: 'Playfair Display', serif;
@@ -552,7 +628,7 @@
             text-align: center;
             font-size: 1rem;
             margin-bottom: 4.5rem;
-            color: rgba(245,241,235,0.5);
+            color: rgba(245, 241, 235, 0.5);
             font-weight: 300;
         }
 
@@ -563,10 +639,10 @@
         }
 
         .solution-card {
-            background: rgba(255,255,255,0.06);
+            background: rgba(255, 255, 255, 0.06);
             padding: 2.8rem 2.2rem;
             border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             backdrop-filter: blur(10px);
@@ -575,7 +651,7 @@
         .solution-card:hover {
             border-color: var(--accent-rose);
             transform: translateY(-6px);
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .step-num {
@@ -600,7 +676,7 @@
 
         .step-desc {
             font-size: 0.9rem;
-            color: rgba(245,241,235,0.65);
+            color: rgba(245, 241, 235, 0.65);
             font-weight: 300;
             line-height: 1.8;
         }
@@ -627,28 +703,38 @@
 
         .proof-img-back {
             position: absolute;
-            top: 0; right: 0;
+            top: 0;
+            right: 0;
             width: 80%;
             height: 85%;
             border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.14);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.14);
         }
 
-        .proof-img-back img { width: 100%; height: 100%; object-fit: cover; }
+        .proof-img-back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .proof-img-front {
             position: absolute;
-            bottom: 0; left: 0;
+            bottom: 0;
+            left: 0;
             width: 60%;
             height: 55%;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 18px 45px rgba(0,0,0,0.16);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
             border: 5px solid var(--secondary);
         }
 
-        .proof-img-front img { width: 100%; height: 100%; object-fit: cover; }
+        .proof-img-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
         .proof-pill {
             position: absolute;
@@ -657,7 +743,7 @@
             background: white;
             border-radius: 50px;
             padding: 0.8rem 1.4rem;
-            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
             display: flex;
             align-items: center;
             gap: 0.6rem;
@@ -665,15 +751,25 @@
         }
 
         .proof-pill-dot {
-            width: 8px; height: 8px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: #4caf7d;
             animation: pulse 2s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.3); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: scale(1.3);
+            }
         }
 
         .proof-pill span {
@@ -684,7 +780,7 @@
             letter-spacing: 0.8px;
         }
 
-        .proof-text { }
+        .proof-text {}
 
         .proof-eyebrow {
             font-size: 0.72rem;
@@ -719,7 +815,7 @@
             padding: 1.5rem 2rem;
             border-radius: 0 8px 8px 0;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         .proof-quote p {
@@ -765,17 +861,34 @@
             animation: fadeInUp 1s ease-out backwards;
         }
 
-        .feature:nth-child(1) { animation-delay: 0.1s; }
-        .feature:nth-child(2) { animation-delay: 0.2s; }
-        .feature:nth-child(3) { animation-delay: 0.3s; }
-        .feature:nth-child(4) { animation-delay: 0.4s; }
-        .feature:nth-child(5) { animation-delay: 0.5s; }
-        .feature:nth-child(6) { animation-delay: 0.6s; }
+        .feature:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .feature:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .feature:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .feature:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .feature:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .feature:nth-child(6) {
+            animation-delay: 0.6s;
+        }
 
         .feature:hover {
             border-color: var(--accent-rose);
             transform: translateY(-6px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.09);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.09);
         }
 
         .feature-icon {
@@ -873,7 +986,7 @@
 
         .cta-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
             background: var(--accent-gold);
             color: white;
         }
@@ -885,7 +998,7 @@
             padding: 4.5rem;
             background: var(--white);
             border-radius: 12px;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.09);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.09);
             border: 1px solid #e4dbd2;
         }
 
@@ -907,7 +1020,9 @@
             font-weight: 300;
         }
 
-        .form-group { margin-bottom: 1.8rem; }
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
 
         .form-group label {
             display: block;
@@ -975,12 +1090,15 @@
         /* ── FOOTER ── */
         footer {
             background: var(--primary);
-            color: rgba(245,241,235,0.7);
+            color: rgba(245, 241, 235, 0.7);
             padding: 5rem 3rem;
             text-align: center;
         }
 
-        .footer-content { max-width: 1600px; margin: 0 auto; }
+        .footer-content {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
 
         .footer-logo {
             font-family: 'Playfair Display', serif;
@@ -1001,7 +1119,11 @@
             margin-top: 0.8rem;
         }
 
-        footer p { font-size: 0.85rem; margin: 0.6rem 0; font-weight: 300; }
+        footer p {
+            font-size: 0.85rem;
+            margin: 0.6rem 0;
+            font-weight: 300;
+        }
 
         footer .footer-copy {
             font-size: 0.78rem;
@@ -1011,33 +1133,99 @@
 
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
-            .hero { grid-template-columns: 1fr; gap: 3rem; padding: 2rem; }
-            .hero-title { font-size: 3.5rem; }
-            .section-title { font-size: 2.5rem; }
-            .pain-grid { grid-template-columns: repeat(2, 1fr); }
-            .solution-grid { grid-template-columns: repeat(2, 1fr); }
-            .features-grid { grid-template-columns: 1fr; }
-            .form-row { grid-template-columns: 1fr; }
-            .social-proof-inner { grid-template-columns: 1fr; }
-            .proof-image-stack { height: 380px; }
-            nav { display: none; }
-            .hero-right { display: none; }
-            header { padding: 1rem 2rem; }
-            .photo-row { grid-template-columns: 1fr 1fr; height: auto; }
-            .photo-row .photo-cell { height: 180px; }
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 2rem;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .pain-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .solution-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .social-proof-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .proof-image-stack {
+                height: 380px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero-right {
+                display: none;
+            }
+
+            header {
+                padding: 1rem 2rem;
+            }
+
+            .photo-row {
+                grid-template-columns: 1fr 1fr;
+                height: auto;
+            }
+
+            .photo-row .photo-cell {
+                height: 180px;
+            }
         }
 
         @media (max-width: 640px) {
-            .hero-title { font-size: 2.3rem; }
-            .section-title { font-size: 1.9rem; }
-            .pain-grid { grid-template-columns: 1fr; }
-            .solution-grid { grid-template-columns: 1fr; }
-            .cta-inner { padding: 5rem 1.5rem; }
-            .form-section { padding: 2rem 1.5rem; margin: 3rem 1rem; }
-            .photo-row { grid-template-columns: 1fr; }
+            .hero-title {
+                font-size: 2.3rem;
+            }
+
+            .section-title {
+                font-size: 1.9rem;
+            }
+
+            .pain-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-inner {
+                padding: 5rem 1.5rem;
+            }
+
+            .form-section {
+                padding: 2rem 1.5rem;
+                margin: 3rem 1rem;
+            }
+
+            .photo-row {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -1050,7 +1238,8 @@
                 <a href="#why">Benefits</a>
                 <a href="#form">Contact</a>
             </nav>
-            <button class="cta" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Begin</button>
+            <button class="cta"
+                onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Begin</button>
         </div>
     </header>
 
@@ -1058,19 +1247,24 @@
     <section class="hero">
         <div class="hero-left">
             <div class="hero-badge">Premium Home Discovery · Noida</div>
-            
+
             <h1 class="hero-title">
                 The <span class="hero-accent">right home</span>.<br>
                 Within your budget.
             </h1>
-            
+
             <p class="hero-subtitle">
-                Discover meticulously curated homes matched to your lifestyle. Skip the endless search. We find your perfect home in just one week.
+                Discover meticulously curated homes matched to your lifestyle. Skip the endless search. We find your
+                perfect home in just one week.
             </p>
 
             <div class="hero-buttons">
-                <button class="btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Start Discovery</button>
-                <button class="btn-secondary" onclick="document.getElementById('solution').scrollIntoView({behavior:'smooth'})">Learn More</button>
+                <button class="btn-primary"
+                    onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Start
+                    Discovery</button>
+                <button class="btn-secondary"
+                    onclick="document.getElementById('solution').scrollIntoView({behavior:'smooth'})">Learn
+                    More</button>
             </div>
 
             <div class="hero-stats">
@@ -1092,19 +1286,13 @@
         <div class="hero-right">
             <!-- Main large photo -->
             <div class="hero-photo-main">
-                <img 
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85&fit=crop&auto=format"
-                    alt="Luxury modern living room interior"
-                    loading="eager"
-                />
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85&fit=crop&auto=format"
+                    alt="Luxury modern living room interior" loading="eager" />
             </div>
             <!-- Smaller corner photo -->
             <div class="hero-photo-secondary">
-                <img 
-                    src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?w=600&q=85&fit=crop&auto=format"
-                    alt="Elegant bedroom interior"
-                    loading="eager"
-                />
+                <img src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?w=600&q=85&fit=crop&auto=format"
+                    alt="Elegant bedroom interior" loading="eager" />
             </div>
             <!-- Floating badge -->
             <div class="hero-photo-badge">
@@ -1120,19 +1308,23 @@
             <div class="strip-label">Curated lifestyles across Noida</div>
             <div class="photo-row">
                 <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700&q=80&fit=crop&auto=format" alt="Modern luxury apartment" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700&q=80&fit=crop&auto=format"
+                        alt="Modern luxury apartment" loading="lazy" />
                     <div class="photo-cell-label">Modern Living</div>
                 </div>
                 <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=400&q=80&fit=crop&auto=format" alt="Minimalist kitchen" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=400&q=80&fit=crop&auto=format"
+                        alt="Minimalist kitchen" loading="lazy" />
                     <div class="photo-cell-label">Premium Kitchens</div>
                 </div>
                 <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=80&fit=crop&auto=format" alt="Contemporary home exterior" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=80&fit=crop&auto=format"
+                        alt="Contemporary home exterior" loading="lazy" />
                     <div class="photo-cell-label">Gated Complexes</div>
                 </div>
                 <div class="photo-cell">
-                    <img src="https://images.unsplash.com/photo-1600210491892-03d54730d518?w=600&q=80&fit=crop&auto=format" alt="Serene bedroom" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1600210491892-03d54730d518?w=600&q=80&fit=crop&auto=format"
+                        alt="Serene bedroom" loading="lazy" />
                     <div class="photo-cell-label">Serene Spaces</div>
                 </div>
             </div>
@@ -1151,7 +1343,8 @@
             <div class="pain-card">
                 <div class="pain-icon">⏰</div>
                 <h3 class="pain-title">Time Scarcity</h3>
-                <p class="pain-desc">Spend 20+ hours searching while managing a new role? We handle it entirely for you.</p>
+                <p class="pain-desc">Spend 20+ hours searching while managing a new role? We handle it entirely for you.
+                </p>
             </div>
             <div class="pain-card">
                 <div class="pain-icon">🗺️</div>
@@ -1193,7 +1386,8 @@
                 <div class="solution-card">
                     <div class="step-num">01</div>
                     <div class="step-label">Understand</div>
-                    <div class="step-desc">Share your vision. Budget, lifestyle, preferences. Five minutes of clarity.</div>
+                    <div class="step-desc">Share your vision. Budget, lifestyle, preferences. Five minutes of clarity.
+                    </div>
                 </div>
                 <div class="solution-card">
                     <div class="step-num">02</div>
@@ -1219,10 +1413,12 @@
         <div class="social-proof-inner">
             <div class="proof-image-stack">
                 <div class="proof-img-back">
-                    <img src="https://images.unsplash.com/photo-1574691250077-03a929faece5?w=700&q=85&fit=crop&auto=format" alt="Beautiful apartment interior" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1574691250077-03a929faece5?w=700&q=85&fit=crop&auto=format"
+                        alt="Beautiful apartment interior" loading="lazy" />
                 </div>
                 <div class="proof-img-front">
-                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&q=85&fit=crop&auto=format" alt="Modern home exterior Noida" loading="lazy"/>
+                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=500&q=85&fit=crop&auto=format"
+                        alt="Modern home exterior Noida" loading="lazy" />
                 </div>
                 <div class="proof-pill">
                     <div class="proof-pill-dot"></div>
@@ -1232,12 +1428,16 @@
             <div class="proof-text">
                 <div class="proof-eyebrow">Real Results</div>
                 <h2 class="proof-heading">Homes that feel like they were built for you</h2>
-                <p class="proof-body">We go beyond square footage and rent — we match your commute, your routines, your taste. Every recommendation is a home we'd live in ourselves.</p>
+                <p class="proof-body">We go beyond square footage and rent — we match your commute, your routines, your
+                    taste. Every recommendation is a home we'd live in ourselves.</p>
                 <div class="proof-quote">
-                    <p>"Homeory found me exactly what I wanted in 4 days. I had just relocated for work — they made the entire process effortless."</p>
+                    <p>"Homeory found me exactly what I wanted in 4 days. I had just relocated for work — they made the
+                        entire process effortless."</p>
                     <div class="proof-quote-author">— Arjun M., Senior Manager, Sector 62</div>
                 </div>
-                <button class="btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Start My Search</button>
+                <button class="btn-primary"
+                    onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Start My
+                    Search</button>
             </div>
         </div>
     </section>
@@ -1255,42 +1455,48 @@
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>Lifestyle Curation</h3>
-                    <p>We don't just find homes. We match your complete lifestyle—gym proximity, restaurant scenes, neighborhood vibe, commute logistics.</p>
+                    <p>We don't just find homes. We match your complete lifestyle—gym proximity, restaurant scenes,
+                        neighborhood vibe, commute logistics.</p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>Verified Quality</h3>
-                    <p>Every property personally inspected by our team. Photos align with reality. No surprises, no regrets.</p>
+                    <p>Every property personally inspected by our team. Photos align with reality. No surprises, no
+                        regrets.</p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>Local Mastery</h3>
-                    <p>Deep knowledge of every Noida sector, trusted brokers, neighborhood personalities. Insider intelligence at your service.</p>
+                    <p>Deep knowledge of every Noida sector, trusted brokers, neighborhood personalities. Insider
+                        intelligence at your service.</p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>Curated Selection</h3>
-                    <p>Five to eight handpicked homes instead of five hundred mediocre options. Decide in a day, not a month.</p>
+                    <p>Five to eight handpicked homes instead of five hundred mediocre options. Decide in a day, not a
+                        month.</p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>Broker Eliminated</h3>
-                    <p>No pushy intermediaries. No hidden agendas. Pure, transparent guidance from someone invested in your satisfaction.</p>
+                    <p>No pushy intermediaries. No hidden agendas. Pure, transparent guidance from someone invested in
+                        your satisfaction.</p>
                 </div>
             </div>
             <div class="feature">
                 <div class="feature-icon">✦</div>
                 <div class="feature-content">
                     <h3>One-Week Guarantee</h3>
-                    <p>Find your perfect home within seven days. If not, we continue searching. Your time is our priority.</p>
+                    <p>Find your perfect home within seven days. If not, we continue searching. Your time is our
+                        priority.</p>
                 </div>
             </div>
         </div>
@@ -1304,7 +1510,8 @@
             <div class="cta-eyebrow">Start Today</div>
             <h2>Ready to discover<br><em>your</em> perfect home?</h2>
             <p>Let us match you with your perfect home. Within your budget. In just one week.</p>
-            <button class="cta-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Begin Your Journey</button>
+            <button class="cta-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">Begin
+                Your Journey</button>
         </div>
     </section>
 
@@ -1314,26 +1521,31 @@
         <p class="form-subtitle">Tell us about your ideal home. We'll find it within a week.</p>
 
         <form id="homeoryForm">
+            <!-- FormSubmit hidden fields -->
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_subject" value="New Homeory Lead! 🏡">
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="form-row">
                 <div class="form-group">
                     <label>Full Name *</label>
-                    <input type="text" placeholder="Your name" required>
+                    <input type="text" name="Full Name" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
                     <label>Phone *</label>
-                    <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                    <input type="tel" name="Phone" placeholder="+91 XXXXX XXXXX" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Email *</label>
-                <input type="email" placeholder="your@email.com" required>
+                <input type="email" name="Email" placeholder="your@email.com" required>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
                     <label>Monthly Budget *</label>
-                    <select required>
+                    <select name="Monthly Budget" required>
                         <option value="">Select range</option>
                         <option>₹18k – ₹25k</option>
                         <option>₹25k – ₹35k</option>
@@ -1344,13 +1556,15 @@
                 </div>
                 <div class="form-group">
                     <label>Preferred Location *</label>
-                    <input type="text" placeholder="e.g., Sector 62, Cyber City" required>
+                    <input type="text" name="Preferred Location" placeholder="e.g., Sector 62, Cyber City" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Your Lifestyle *</label>
-                <textarea rows="3" placeholder="Describe your ideal living situation — commute, amenities, vibe..." required></textarea>
+                <textarea name="Lifestyle" rows="3"
+                    placeholder="Describe your ideal living situation — commute, amenities, vibe..."
+                    required></textarea>
             </div>
 
             <button type="submit" class="form-submit">Discover My Home →</button>
@@ -1363,16 +1577,47 @@
             <div class="footer-logo">homeory</div>
             <div class="footer-tagline">The Right Home. Within Your Budget.</div>
             <p style="margin-top:1.5rem;">Serving discerning professionals across Noida</p>
-            <p class="footer-copy">© 2024 homeory. All rights reserved. · Photos by Unsplash (free commercial license)</p>
+            <p class="footer-copy">© 2024 homeory. All rights reserved. · Photos by Unsplash (free commercial license)
+            </p>
         </div>
     </footer>
 
     <script>
-        document.getElementById('homeoryForm').addEventListener('submit', function(e) {
+        document.getElementById('homeoryForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you. We will contact you within 2 hours to begin your home discovery journey.');
-            this.reset();
+
+            const form = this;
+            const submitBtn = form.querySelector('.form-submit');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+
+            fetch('https://formsubmit.co/ajax/sbhumika2504@gmail.com', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Thank you. We will contact you within 2 hours to begin your home discovery journey.');
+                        form.reset();
+                    } else {
+                        alert('Oops! Something went wrong. Please try again later.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Oops! Something went wrong. Please try again later.');
+                })
+                .finally(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
         });
     </script>
 </body>
+
 </html>
